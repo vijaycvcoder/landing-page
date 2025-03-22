@@ -1,38 +1,3 @@
-// src/components/HeroSection.js
-//import React from 'react';
- //import { Container, Typography, Button, Box } from '@mui/material';
-/*
-const HeroSection = () => {
-  return (
-    <Box
-      sx={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '100vh',
-        backgroundColor: '#009688',
-        color: 'white',
-        textAlign: 'center',
-        padding: 2,
-      }}
-    >
-      <Container>
-        <Typography variant="h3" gutterBottom>
-          Hello , I am  Vijayasundaram
-        </Typography>
-        <Typography variant="h5" paragraph>
-          To Know more about me ! 
-        </Typography>
-        <Button variant="contained" color="secondary" size="large">
-          Click Below !
-        </Button>
-      </Container>
-    </Box>
-  );
-};
-
-export default HeroSection;
-*/
 import React from 'react';
  import { Container, Typography, Button, Box } from '@mui/material';
 
@@ -56,9 +21,6 @@ const HeroSection = () => {
         <Typography variant="h5" paragraph>
           To Know more about me ! 
         </Typography>
-        <Button variant="contained" color="primary" size="large">
-          Click Below !
-        </Button>
       </Container>
     </div>
   );
