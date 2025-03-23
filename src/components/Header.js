@@ -13,11 +13,12 @@ export const Header = () =>{
       <div className={styles.menu} >
         
         <img className={styles.menuBtn} 
-        src={menuOpen ? require('./menu.png'):require('./close.png')}
+        src={menuOpen ? require('./close.png'):require('./menu.png')}
         alt ="menu-button"
         onClick={() =>setMenuOpen(!menuOpen)}/>
 
-        <ul className={`${styles.menuitems} ${menuOpen && styles.menuOpen}`}>
+        <ul className={`${styles.menuitems} ${menuOpen && styles.menuOpen}`}
+            onClick={() =>setMenuOpen(false)}>
           <li>
             <a href='#about'>About</a>
           </li>
