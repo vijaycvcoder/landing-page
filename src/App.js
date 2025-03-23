@@ -4,7 +4,9 @@ import { CssBaseline, ThemeProvider} from '@mui/material';
 import {createTheme } from '@mui/material/styles';
 
 import HeroSection from './components/HeroSection';
-import Footer from './components/Footer';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+
 import Header from './components/Header';
 
 const theme = createTheme();
@@ -15,6 +17,8 @@ const App = () => {
       <Header/>
       <CssBaseline />
       <HeroSection />
+      <About/>
+      <Contact/>
     </ThemeProvider>
   );
 };
