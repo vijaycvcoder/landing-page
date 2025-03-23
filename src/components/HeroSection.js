@@ -11,12 +11,12 @@ export const HeroSection = () => {
           I'm a Software Developer with 5+ years of Experience.
           Reach out if you'd like to learn more!
         </p>
-        <a href="mailto:myemail@email.com" className={styles.contactBtn}>
+        <a href="mailto:vijayasundaram96@gmail.com" className={styles.contactBtn}>
           Contact Me
         </a>
       </div>
       <img
-        src={require('./heroImage.png')}
+        src={require('./man-image.png')}
         alt="Hero image of me"
         className={styles.heroImg}
       />
