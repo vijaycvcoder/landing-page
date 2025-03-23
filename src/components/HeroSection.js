@@ -9,6 +9,7 @@ export const HeroSection = () => {
         <h1 className={styles.title}>Hi, I'm Vijay</h1>
         <p className={styles.description}>
           I'm a Software Developer with 5+ years of Experience.
+          Worked on various software development tools .
           Reach out if you'd like to learn more!
         </p>
         <a href="mailto:vijayasundaram96@gmail.com" className={styles.contactBtn}>
