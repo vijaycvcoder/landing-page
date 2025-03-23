@@ -15,8 +15,6 @@ const App = () => {
       <Header/>
       <CssBaseline />
       <HeroSection />
-
-      <Footer />
     </ThemeProvider>
   );
 };
