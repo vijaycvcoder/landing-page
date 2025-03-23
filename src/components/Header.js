@@ -6,8 +6,6 @@ import styles from './Header.module.css'
 
 
 export const Header = () =>{
-  const menuUrl = 'nav/menuIcon.png';
-  const closeUrl = 'nav/closeIcon.png';
   const [menuOpen,setMenuOpen] = useState(false);
   return(
     <nav className={styles.navbar}>
@@ -15,7 +13,7 @@ export const Header = () =>{
       <div className={styles.menu} >
         
         <img className={styles.menuBtn} 
-        src={menuOpen ? menuUrl:closeUrl}
+        src={menuOpen ? require('./menu.png'):require('./close.png')}
         alt ="menu-button"
         onClick={() =>setMenuOpen(!menuOpen)}/>
 
