@@ -6,7 +6,8 @@ import {createTheme } from '@mui/material/styles';
 import HeroSection from './components/HeroSection';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
-import Certification from './components/Certification/Certification';  // Add this import
+import Certification from './components/Certification/Certification';
+import Project from './components/Project/Project';  // Add this import
 
 import Header from './components/Header';
 
@@ -19,7 +20,8 @@ const App = () => {
       <CssBaseline />
       <HeroSection />
       <About/>
-      <Certification/>  {/* Add this component */}
+      <Certification/>
+      <Project/>  {/* Add this component */}
       <Contact/>
     </ThemeProvider>
   );
