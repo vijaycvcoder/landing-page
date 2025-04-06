@@ -7,19 +7,22 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 98vw;
-  padding: 58px 10%;
-  gap: 10px;
+  width: 100%;
+  max-width: 100%;
+  padding: 58px 5%;
+  gap: 20px;
+  overflow-x: hidden;
 }
 
 .text h2 {
-  font-size: 60px;
+  font-size: clamp(36px, 5vw, 60px);
   font-weight: 700;
   letter-spacing: 0px;
+  margin-bottom: 20px;
 }
 
 .text p {
-  font-size: 40px;
+  font-size: clamp(24px, 3vw, 40px);
   font-weight: 400;
   letter-spacing: 2px;
 }
@@ -41,24 +44,50 @@
 .link a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 30px;
+  font-size: clamp(18px, 2.5vw, 30px);
   font-weight: 400;
   letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 40px 4%;
+  }
 }
 
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column;
-    gap: 23px;
+    gap: 30px;
+    padding: 30px 20px;
   }
 
   .text {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .links {
     align-items: center;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .link {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin-top: 60px;
+    padding: 20px 15px;
+  }
+  
+  .link {
+    gap: 15px;
   }
 }
