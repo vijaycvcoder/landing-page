@@ -26,6 +26,9 @@ export const Header = () =>{
             <a href='#experience'>Experience</a>
           </li>
           <li>
+            <a href='#certification'>Certification</a>
+          </li>
+          <li>
             <a href='#projects'>Projects</a>
           </li>
           <li>

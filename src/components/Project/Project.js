@@ -3,23 +3,23 @@ import styles from './Project.module.css';
 
 const Project = () => {
   return (
-    <section className={styles.container}>
-      <h2 className={styles.title}>My Projects</h2>
+    <section id = "projects" className={styles.container}>
+      <h2 className={styles.title}>Projects</h2>
       <div className={styles.projects}>
         <div className={styles.projectCard}>
-          <h3>E-Commerce Website</h3>
-          <p>A full-stack e-commerce platform built with React and Node.js</p>
-          <div className={styles.techStack}>
+          <h3>Project Under Construction </h3>
+          <p>Will Soon update the Project</p>
+          {/* <div className={styles.techStack}>
             <span>React</span>
             <span>Node.js</span>
             <span>MongoDB</span>
-          </div>
-          <div className={styles.links}>
+          </div> */}
+          {/* <div className={styles.links}>
             <a href="https://github.com/yourusername/project1" target="_blank" rel="noopener noreferrer">View Code →</a>
             <a href="https://project1-demo.com" target="_blank" rel="noopener noreferrer">Live Demo →</a>
-          </div>
+          </div> */}
         </div>
-
+{/*     
         <div className={styles.projectCard}>
           <h3>Weather Dashboard</h3>
           <p>Real-time weather application using Weather API</p>
@@ -46,7 +46,7 @@ const Project = () => {
             <a href="https://github.com/yourusername/project3" target="_blank" rel="noopener noreferrer">View Code →</a>
             <a href="https://project3-demo.com" target="_blank" rel="noopener noreferrer">Live Demo →</a>
           </div>
-        </div>
+        </div>*/ }
       </div>
     </section>
   );
