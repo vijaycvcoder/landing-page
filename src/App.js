@@ -1,5 +1,5 @@
 // src/App.js
-import React from 'react';
+import React, { useState } from 'react';
 import { CssBaseline, ThemeProvider} from '@mui/material';
 import {createTheme } from '@mui/material/styles';
 
@@ -14,14 +14,24 @@ import Header from './components/Header';
 const theme = createTheme();
 
 const App = () => {
+  const [selectedSkill, setSelectedSkill] = useState(null);
+
+  const handleSkillSelect = (skillType) => {
+    setSelectedSkill(skillType);
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <Header/>
       <CssBaseline />
       <HeroSection />
-      <About/>
+      <About onSkillSelect={handleSkillSelect}/>
       <Certification/>
-      <Project/>  {/* Add this component */}
+      <Project selectedSkill={selectedSkill}/>
       <Contact/>
     </ThemeProvider>
   );

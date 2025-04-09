@@ -7,17 +7,15 @@ const Project = () => {
       <h2 className={styles.title}>Projects</h2>
       <div className={styles.projects}>
         <div className={styles.projectCard}>
-          <h3>Project Under Construction </h3>
-          <p>Will Soon update the Project</p>
-          {/* <div className={styles.techStack}>
-            <span>React</span>
-            <span>Node.js</span>
-            <span>MongoDB</span>
-          </div> */}
-          {/* <div className={styles.links}>
-            <a href="https://github.com/yourusername/project1" target="_blank" rel="noopener noreferrer">View Code →</a>
-            <a href="https://project1-demo.com" target="_blank" rel="noopener noreferrer">Live Demo →</a>
-          </div> */}
+          <h3>Daily Facts based on Wikipedia</h3>
+          <p>An AI Generated image based Instagram Page </p>
+           <div className={styles.techStack}>
+            <span>Python</span>
+            <span>VibeCoding</span>
+          </div>
+           <div className={styles.links}>
+            <a href="https://www.instagram.com/dailyfacts2247/" target="_blank" rel="noopener noreferrer">Live Demo →</a>
+          </div>
         </div>
 {/*     
         <div className={styles.projectCard}>
