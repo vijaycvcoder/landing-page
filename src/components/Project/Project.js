@@ -14,7 +14,6 @@ const Project = () => {
             <span>VibeCoding</span>
           </div>
            <div className={styles.links}>
-            <a href="https://github.com/vijaycvcoder/insta-news-publisher" target="_blank" rel="noopener noreferrer">View Code →</a>
             <a href="https://www.instagram.com/dailyfacts2247/" target="_blank" rel="noopener noreferrer">Live Demo →</a>
           </div>
         </div>
