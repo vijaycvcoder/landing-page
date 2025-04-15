@@ -243,3 +243,60 @@
     transform: translateY(0);
   }
 }
+
+@media screen and (max-width: 830px) {
+  .emailContainer {
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .email {
+    font-size: 14px;
+    word-break: break-all;
+  }
+
+  .copyBtn {
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .copyBtn svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+.copyBtn {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.copyBtn svg {
+  transition: transform 0.3s ease;
+}
+
+.copyBtn:hover svg {
+  transform: translateY(-1px);
+}
+
+.copyBtn:hover {
+  background: #146C94;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(20, 108, 148, 0.2);
+}
+
+.copyBtn:active {
+  transform: translateY(1px);
+}
