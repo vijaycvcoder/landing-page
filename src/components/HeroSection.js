@@ -9,8 +9,11 @@ export const HeroSection = () => {
         <h1 className={styles.title}>Hi, I'm Vijay</h1>
         <p className={styles.description}>
           I'm a Software Developer with 5+ years of Experience.
-          Worked on various software development tools .
-          Reach out if you'd like to learn more!
+          Passionate about blending logic and creativity to solve problems, 
+          tell stories through data, and user-focused solutions that stands out.
+          </p>
+          <p className={styles.description}>
+          Let’s connect and create something impactful!
         </p>
         <a href="mailto:vijayasundaram96@gmail.com" className={styles.contactBtn}>
           Contact Me
