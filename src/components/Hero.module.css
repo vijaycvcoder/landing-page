@@ -268,21 +268,67 @@
     height: 14px;
   }
 }
+.emailContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 15px 0;
+  background: rgba(20, 108, 148, 0.1);
+  padding: 15px 20px;
+  border-radius: 32px;
+  width: 110%;
+}
+
+.email {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  flex: 1;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
 .copyBtn {
   background: var(--color-primary);
   color: white;
   border: none;
-  padding: 8px 15px;
-  border-radius: 8px;
+  padding: 8px 5px;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
   transition: all 0.3s ease;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 6px;
+  white-space: nowrap;
+  min-width: fit-content;
 }
 
+@media screen and (max-width: 830px) {
+  .emailContainer {
+    flex-direction: column;
+    padding: 15px;
+    width: 100%;
+    margin: 15px auto;
+    gap: 15px;
+  }
+
+  .email {
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .copyBtn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 5px;
+  }
+}
 .copyBtn svg {
   transition: transform 0.3s ease;
 }
